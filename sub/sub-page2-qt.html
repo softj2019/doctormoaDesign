@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>닥터모아</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/common.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="m-header">
+            <div class="in-hd sub-hd">
+                <div class="logo-box flexwrap">
+                    <button type="button" class="left-btn">이전</button>
+                    <h1 class="logo"><a href="index.html">닥터모아</a></h1>
+                </div>
+                <div class="src-out">
+                    <div class="src-form">
+                        <form action="" class="flexwrap">
+                            <input type="text" class="src-inp">
+                            <button type="button" class="src-btn"></button>
+                        </form>
+                    </div>
+                    <button type="button" class="ham-btn"></button>
+                </div>
+            </div>
+        </header>
+        <div class="content1">            
+            <div class="info-in2 page-in2 box-sd">
+                <h3 class="info-tit flexcenter magin-1 pd1">Q&A</h3>
+                <div class=" pd1">
+                        <div class="qt-box">
+                        <input type="text" placeholder="질문하기"><button type="button" class="s-blue-btn">질문하기</button>
+                    </div>
+                    <ul class="qt-ul">
+                        <li>
+                            <p class="flexwrap">Q. 질문입니다. <button type="button" class="s-blue-btn qt-an-btn">답변하기</button></p>
+                            <p>A. 답변입니다.</p>
+                        </li>
+                        <li>
+                            <p class="flexwrap">Q. 질문입니다. <button type="button" class="s-blue-btn qt-an-btn">답변하기</button></p>
+                            <p>A. 답변입니다.</p>
+                        </li>
+                        <li>
+                            <p class="flexwrap">Q. 질문입니다. <button type="button" class="s-blue-btn qt-an-btn">답변하기</button></p>
+                            <p>A. 답변입니다.</p>
+                        </li>
+                        <li>
+                            <p class="flexwrap">Q. 질문입니다. <button type="button" class="s-blue-btn qt-an-btn">답변하기</button></p>
+                            <p>A. 답변입니다.</p>
+                        </li>
+                        <li>
+                            <p class="flexwrap">Q. 질문입니다. <button type="button" class="s-blue-btn qt-an-btn">답변하기</button></p>
+                            <p>A. 답변입니다.</p>
+                        </li>
+                        <li>
+                            <p class="flexwrap">Q. 질문입니다. <button type="button" class="s-blue-btn qt-an-btn">답변하기</button></p>
+                            <p>A. 답변입니다.</p>
+                        </li>
+                        <li>
+                            <p class="flexwrap">Q. 질문입니다. <button type="button" class="s-blue-btn qt-an-btn">답변하기</button></p>
+                            <p>A. 답변입니다.</p>
+                        </li>
+                        <li>
+                            <p class="flexwrap">Q. 질문입니다. <button type="button" class="s-blue-btn qt-an-btn">답변하기</button></p>
+                            <p>A. 답변입니다.</p>
+                        </li>
+                        <li>
+                            <p class="flexwrap">Q. 질문입니다. <button type="button" class="s-blue-btn qt-an-btn">답변하기</button></p>
+                        </li>
+
+                    </ul>
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">≪</a></li>
+                        <li class="page-item"><a class="page-link" href="#">＜</a></li>
+                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">＞</a></li>
+                        <li class="page-item"><a class="page-link" href="#">≫</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal " id="qt-an">
+            <div class="modal-bg"></div>
+            <div class="modalContent md">
+                <header class="modalHd">
+                    <h3>답변하기</h3>
+                    <button class="modalClose"></button>
+                </header>
+                <div class="modalBody">
+                    <ul class="modal-ul">
+                        <li>Q. 질문내용입니다.</li>
+                        <li class="mo-con">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="답변하기"></textarea>
+                        </li>
+                    </ul>
+                    <div class="mo-btn-box">
+                        <button type="button" class="bor-g-btn mr10">취소</button>
+                        <button type="button" class="bor-b-btn">저장</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="ham-mo">
+            <div class="modal-bg"></div>
+            <div class="modalContent md ham-con">
+                <header class="modalHd">
+                    <h3>더보기</h3>
+                    <button class="modalClose"></button>
+                </header>
+                <div class="modalBody pt0 ham-body">
+                    <ul class="cont-ul">
+                        <li><a href="">방문후기</a></li>
+                        <li><a href="">자유게시판</a></li>
+                        <li><a href="">질문과 답변</a></li>
+                        <li><a href="">제품판매</a></li>
+                        <li><a href="">구인구직</a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">의사/병원 등록하기</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="foot-ul flexcenter">
+                <li><a href="">입점문의</a>ㅣ</li>
+                <li><a href="">이용약관</a>ㅣ</li>
+                <li><a href="" class="bold">개인정보방침</a>ㅣ</li>
+                <li><a href="">이용안내</a></li>
+            </ul>
+            <ul class="foot-ul foot-sns flexcenter">
+                <li><a href="" class="facebook-i"></a></li>
+                <li><a href="" class="insta-i"></a></li>
+                <li><a href="" class="kakao-i"></a></li>
+                <li><a href="" class="twitter-i"></a></li>
+                <li><a href="" class="youtube-i"></a></li>
+            </ul>
+            <ul class="foot-inf">
+                <li>상호명 : 닥터모아 ㅣ 사업자등록번호 : 000-00-00000</li>
+                <li>대표 : 대표님 ㅣ 대표번호 : 000-0000-0000</li>
+                <li>서울특별시 어시구 어디로 000 서울빌딩 0층</li>
+            </ul>
+        </footer>
+        <nav class="f-nav">
+            <ul class="flexwrap">
+                <li class=""><a href=""><i class="ham-i"></i></a></li>
+                <li><a href=""><i class="location-i"></i></a></li>
+                <li><a href=""><i class="search-i"></i></a></li>
+                <li><a href=""><i class="home-i"></i></a></li>
+                <li><a href=""><i class="mypage-i"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="../assets/js/common.js"></script>
+</body>
+</html>

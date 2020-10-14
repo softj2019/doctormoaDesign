@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>닥터모아</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/common.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote-lite.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="m-header">
+            <div class="in-hd sub-hd">
+                <div class="logo-box">
+                    <button type="button" class="left-btn">이전</button>
+                    <h1 class="logo"><a href="index.html">닥터모아</a></h1>
+                </div>
+                <div class="src-out">
+                    <div class="src-form">
+                        <form action="" class="flexwrap">
+                            <input type="text" class="src-inp">
+                            <button type="button" class="src-btn"></button>
+                        </form>
+                    </div>
+                    <button type="button" class="ham-btn"></button>
+                </div>
+            </div>
+        </header>
+        <div class="tab-bg"></div>
+        <div class="right-tab">
+            <div class="tab-hd flexwrap">
+                <button type="button" class="closebox"></button>
+                <ul class="main-tab-ul flexcenter">
+                    <li><a href="">로그인</a>ㅣ</li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+            </div>
+            <ul class="tab-lo">
+                <li><a href="">마이페이지</a></li>
+                <li><a href="">진료선택</a></li>
+                <li><a href="">방문후기</a></li>
+                <li><a href="">자유게시판</a></li>
+                <li><a href="">질문과 답변</a></li>
+                <li><a href="">제품판매</a></li>
+                <li><a href="">구인구직</a></li>
+                <li><a href="">공지사항</a></li>
+                <li><a href="">의사/병원 등록하기</a></li>
+            </ul>
+        </div>
+        <div class="content1">
+            <div class="com-hd">
+                <p>게시판 글쓰기</p>
+            </div>
+            <div class="com-main">
+                <ul class="com-cont-ul">
+                    <li class="cont-ul-tit"><input type="text" placeholder="제목입력"></li>
+                    <li class="cont-ul-info"><span>아이디</span></li>
+                    <li>내용</li>
+                    <li>
+                        <textarea name="" id="" cols="30" rows="10" class="mo-txta"></textarea>
+                        <textarea id="summernote" class="sum-t-pc"></textarea> 
+                    </li>
+                    <li>
+                        <div class="fileBox">
+                            <input type="text" class="fileName" id="fileName" name="fileName" readonly="readonly" placeholder="선택된 파일 없음">
+                            <label for="uploadBtn" class="btn_file">파일선택</label>
+                            <input type="file" id="uploadBtn" name="uploadBtn" class="uploadBtn">
+                        </div>
+                    </li>
+                    <li class="cont-ul-pw">
+                        <input type="password" placeholder="비밀번호">
+                    </li>
+                </ul>
+                <div class="btn-box">
+                    <button type="button" class="blue-b-btn2">취소</button>
+                    <button type="button" class="blue-btn">저장</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="foot-ul flexcenter">
+                <li><a href="">입점문의</a>ㅣ</li>
+                <li><a href="">이용약관</a>ㅣ</li>
+                <li><a href="" class="bold">개인정보방침</a>ㅣ</li>
+                <li><a href="">이용안내</a></li>
+            </ul>
+            <ul class="foot-ul foot-sns flexcenter">
+                <li><a href="" class="facebook-i"></a></li>
+                <li><a href="" class="insta-i"></a></li>
+                <li><a href="" class="kakao-i"></a></li>
+                <li><a href="" class="twitter-i"></a></li>
+                <li><a href="" class="youtube-i"></a></li>
+            </ul>
+            <ul class="foot-inf">
+                <li>상호명 : 닥터모아 ㅣ 사업자등록번호 : 000-00-00000</li>
+                <li>대표 : 대표님 ㅣ 대표번호 : 000-0000-0000</li>
+                <li>서울특별시 어시구 어디로 000 서울빌딩 0층</li>
+            </ul>
+        </footer>
+        <div class="modal" id="ham-mo">
+            <div class="modal-bg"></div>
+            <div class="modalContent md ham-con">
+                <header class="modalHd">
+                    <h3>더보기</h3>
+                    <button class="modalClose"></button>
+                </header>
+                <div class="modalBody pt0 ham-body">
+                    <ul class="cont-ul">
+                        <li><a href="">방문후기</a></li>
+                        <li><a href="">자유게시판</a></li>
+                        <li><a href="">질문과 답변</a></li>
+                        <li><a href="">제품판매</a></li>
+                        <li><a href="">구인구직</a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">의사/병원 등록하기</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="f-nav">
+            <ul class="flexwrap">
+                <li><a href=""><i class="ham-i"></i></a></li>
+                <li><a href=""><i class="location-i"></i></a></li>
+                <li><a href=""><i class="search-i"></i></a></li>
+                <li><a href=""><i class="home-i"></i></a></li>
+                <li><a href=""><i class="mypage-i"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="../assets/js/common.js"></script>
+</body>
+</html>

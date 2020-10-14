@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>닥터모아</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/common.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="m-header">
+            <div class="in-hd sub-hd">
+                <div class="logo-box">
+                    <button type="button" class="left-btn">이전</button>
+                    <h1 class="logo"><a href="../index.html">닥터모아</a></h1>
+                </div>
+                <div class="src-out">
+                    <div class="src-form">
+                        <form action="" class="flexwrap">
+                            <input type="text" class="src-inp">
+                            <button type="button" class="src-btn"></button>
+                        </form>
+                    </div>
+                    <button type="button" class="ham-btn"></button>
+                </div>
+            </div>
+        </header>
+        <div class="tab-bg"></div>
+        <div class="right-tab">
+            <div class="tab-hd flexwrap">
+                <button type="button" class="closebox"></button>
+                <ul class="main-tab-ul flexcenter">
+                    <li><a href="">로그인</a>ㅣ</li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+            </div>
+            <ul class="tab-lo">
+                <li><a href="">마이페이지</a></li>
+                <li><a href="">진료선택</a></li>
+                <li><a href="">방문후기</a></li>
+                <li><a href="">자유게시판</a></li>
+                <li><a href="">질문과 답변</a></li>
+                <li><a href="">제품판매</a></li>
+                <li><a href="">구인구직</a></li>
+                <li><a href="">공지사항</a></li>
+                <li><a href="">의사/병원 등록하기</a></li>
+            </ul>
+        </div>
+        <div class="content1">
+            <div class="tab-box">
+                <ul>
+                    <li data-id="tab1" class="on">의사<span>(00)</span></li>
+                    <li data-id="tab2">리뷰<span>(00)</span></li>
+                </ul>
+            </div>
+            <div class="content-in">
+                <div class="tab-con on" id="tab1">
+                    <ul class="tab-ul">
+                        <li><button type="button" class="on">전체</button></li>
+                        <li><select name="" id="" class="">
+                                <option value="">진료시간</option>
+                                <option value="">진료중</option>
+                                <option value="">휴일진료</option>
+                            </select>
+                        </li>
+                        <li><button type="button">전문의</button></li>
+                        <li><button type="button">여의사</button></li>
+                        <li><button type="button">예약가능</button></li>
+                        <li>
+                            <select name="" id="">
+                                <option value="">지역별</option>
+                                <option value="">지역별</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <ul class="tab-ul2 clearfix">
+                        <li>
+                            <a href="">
+                                <div class="tab-img"><img src="../assets/img/bg.jpg" alt=""></div>
+                                <ul class="ul2-ul">
+                                    <li>사과나무치과</li>
+                                    <li class="ul2-name"><h3>이성원</h3><span>교정과 전문의</span></li>
+                                    <li>
+                                        <div class="star-i flexcenter">
+                                            <i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-half-fill yell"></i><i class="ri-star-line yell"></i><p class="rev-s">5.0 <span>(리뷰 10)</span></p> 
+                                        </div>
+                                    </li>
+                                    <li class="ul2-time">
+                                        <span class="sub-time-t">진료중</span><span>18 : 00 종료</span>
+                                    </li>
+                                    <li class="lot-li">
+                                        <i></i><span>주엽역 220m</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab-img"></div>
+                                <ul class="ul2-ul">
+                                    <li>사과나무치과</li>
+                                    <li class="ul2-name"><h3>이성원</h3><span>교정과 전문의</span></li>
+                                    <li>
+                                        <div class="star-i flexcenter">
+                                            <i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-half-fill yell"></i><i class="ri-star-line yell"></i><p class="rev-s">5.0 <span>(리뷰 10)</span></p> 
+                                        </div>
+                                    </li>
+                                    <li class="ul2-time">
+                                        <span class="sub-time-t red">진료종료</span><span>18 : 00 종료</span>
+                                    </li>
+                                    <li class="lot-li">
+                                        <i></i><span>주엽역 220m</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab-img"><img src="../assets/img/bg.jpg" alt=""></div>
+                                <ul class="ul2-ul">
+                                    <li>사과나무치과</li>
+                                    <li class="ul2-name"><h3>이성원</h3><span>교정과 전문의</span></li>
+                                    <li>
+                                        <div class="star-i flexcenter">
+                                            <i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-half-fill yell"></i><i class="ri-star-line yell"></i><p class="rev-s">5.0 <span>(리뷰 10)</span></p> 
+                                        </div>
+                                    </li>
+                                    <li class="ul2-time">
+                                        <span class="sub-time-t">진료중</span><span>18 : 00 종료</span>
+                                    </li>
+                                    <li class="lot-li">
+                                        <i></i><span>주엽역 220m</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab-img"></div>
+                                <ul class="ul2-ul">
+                                    <li>사과나무치과</li>
+                                    <li class="ul2-name"><h3>이성원</h3><span>교정과 전문의</span></li>
+                                    <li>
+                                        <div class="star-i flexcenter">
+                                            <i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-half-fill yell"></i><i class="ri-star-line yell"></i><p class="rev-s">5.0 <span>(리뷰 10)</span></p> 
+                                        </div>
+                                    </li>
+                                    <li class="ul2-time">
+                                        <span class="sub-time-t red">진료종료</span><span>18 : 00 종료</span>
+                                    </li>
+                                    <li class="lot-li">
+                                        <i></i><span>주엽역 220m</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab-img"><img src="../assets/img/bg.jpg" alt=""></div>
+                                <ul class="ul2-ul">
+                                    <li>사과나무치과</li>
+                                    <li class="ul2-name"><h3>이성원</h3><span>교정과 전문의</span></li>
+                                    <li>
+                                        <div class="star-i flexcenter">
+                                            <i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-half-fill yell"></i><i class="ri-star-line yell"></i><p class="rev-s">5.0 <span>(리뷰 10)</span></p> 
+                                        </div>
+                                    </li>
+                                    <li class="ul2-time">
+                                        <span class="sub-time-t">진료중</span><span>18 : 00 종료</span>
+                                    </li>
+                                    <li class="lot-li">
+                                        <i></i><span>주엽역 220m</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab-img"></div>
+                                <ul class="ul2-ul">
+                                    <li>사과나무치과</li>
+                                    <li class="ul2-name"><h3>이성원</h3><span>교정과 전문의</span></li>
+                                    <li>
+                                        <div class="star-i flexcenter">
+                                            <i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-half-fill yell"></i><i class="ri-star-line yell"></i><p class="rev-s">5.0 <span>(리뷰 10)</span></p> 
+                                        </div>
+                                    </li>
+                                    <li class="ul2-time">
+                                        <span class="sub-time-t red">진료종료</span><span>18 : 00 종료</span>
+                                    </li>
+                                    <li class="lot-li">
+                                        <i></i><span>주엽역 220m</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab-img"><img src="../assets/img/bg.jpg" alt=""></div>
+                                <ul class="ul2-ul">
+                                    <li>사과나무치과</li>
+                                    <li class="ul2-name"><h3>이성원</h3><span>교정과 전문의</span></li>
+                                    <li>
+                                        <div class="star-i flexcenter">
+                                            <i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-half-fill yell"></i><i class="ri-star-line yell"></i><p class="rev-s">5.0 <span>(리뷰 10)</span></p> 
+                                        </div>
+                                    </li>
+                                    <li class="ul2-time">
+                                        <span class="sub-time-t">진료중</span><span>18 : 00 종료</span>
+                                    </li>
+                                    <li class="lot-li">
+                                        <i></i><span>주엽역 220m</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab-img"></div>
+                                <ul class="ul2-ul">
+                                    <li>사과나무치과</li>
+                                    <li class="ul2-name"><h3>이성원</h3><span>교정과 전문의</span></li>
+                                    <li>
+                                        <div class="star-i flexcenter">
+                                            <i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-fill yell"></i><i class="ri-star-half-fill yell"></i><i class="ri-star-line yell"></i><p class="rev-s">5.0 <span>(리뷰 10)</span></p> 
+                                        </div>
+                                    </li>
+                                    <li class="ul2-time">
+                                        <span class="sub-time-t red">진료종료</span><span>18 : 00 종료</span>
+                                    </li>
+                                    <li class="lot-li">
+                                        <i></i><span>주엽역 220m</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">≪</a></li>
+                        <li class="page-item"><a class="page-link" href="#">＜</a></li>
+                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">＞</a></li>
+                        <li class="page-item"><a class="page-link" href="#">≫</a></li>
+                    </ul>
+                </div>
+                <div class="tab-con pb20 clearfix" id="tab2">
+                    <p class="g-txt">등록된 리뷰가 없습니다.</p>
+                    <ul class="tab2-ul  clearfix">
+                        <li>
+                            <a href="">
+                                <div class="tab2-tit flexwrap">
+                                    <p>사과나무치과</p>
+                                    <div class="star-i flexcenter">
+                                        <i class="ri-star-fill yell"></i><p class="rev-s">5.0</p> 
+                                    </div>
+                                </div>
+                                <div class="tab2-name flexwrap">
+                                    <p>고양이 집사</p>
+                                    <p class="tab2-date">등록일<span class="flexcenter">20.09.07</span></p>
+                                </div>
+                                <div class="tab2-re">
+                                    <span>[교정]</span>
+                                    <p>리뷰 부분입니다.리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 부분입니다</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab2-tit flexwrap">
+                                    <p>사과나무치과</p>
+                                    <div class="star-i flexcenter">
+                                        <i class="ri-star-fill yell"></i><p class="rev-s">5.0</p> 
+                                    </div>
+                                </div>
+                                <div class="tab2-name flexwrap">
+                                    <p>고양이 집사</p>
+                                    <p class="tab2-date">등록일<span class="flexcenter">20.09.07</span></p>
+                                </div>
+                                <div class="tab2-re">
+                                    <span>[교정]</span>
+                                    <p>리뷰 부분입니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab2-tit flexwrap">
+                                    <p>사과나무치과</p>
+                                    <div class="star-i flexcenter">
+                                        <i class="ri-star-fill yell"></i><p class="rev-s">5.0</p> 
+                                    </div>
+                                </div>
+                                <div class="tab2-name flexwrap">
+                                    <p>고양이 집사</p>
+                                    <p class="tab2-date">등록일<span class="flexcenter">20.09.07</span></p>
+                                </div>
+                                <div class="tab2-re">
+                                    <span>[교정]</span>
+                                    <p>리뷰 부분입니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab2-tit flexwrap">
+                                    <p>사과나무치과</p>
+                                    <div class="star-i flexcenter">
+                                        <i class="ri-star-fill yell"></i><p class="rev-s">5.0</p> 
+                                    </div>
+                                </div>
+                                <div class="tab2-name flexwrap">
+                                    <p>고양이 집사</p>
+                                    <p class="tab2-date">등록일<span class="flexcenter">20.09.07</span></p>
+                                </div>
+                                <div class="tab2-re">
+                                    <span>[교정]</span>
+                                    <p>리뷰 부분입니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab2-tit flexwrap">
+                                    <p>사과나무치과</p>
+                                    <div class="star-i flexcenter">
+                                        <i class="ri-star-fill yell"></i><p class="rev-s">5.0</p> 
+                                    </div>
+                                </div>
+                                <div class="tab2-name flexwrap">
+                                    <p>고양이 집사</p>
+                                    <p class="tab2-date">등록일<span class="flexcenter">20.09.07</span></p>
+                                </div>
+                                <div class="tab2-re">
+                                    <span>[교정]</span>
+                                    <p>리뷰 부분입니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab2-tit flexwrap">
+                                    <p>사과나무치과</p>
+                                    <div class="star-i flexcenter">
+                                        <i class="ri-star-fill yell"></i><p class="rev-s">5.0</p> 
+                                    </div>
+                                </div>
+                                <div class="tab2-name flexwrap">
+                                    <p>고양이 집사</p>
+                                    <p class="tab2-date">등록일<span class="flexcenter">20.09.07</span></p>
+                                </div>
+                                <div class="tab2-re">
+                                    <span>[교정]</span>
+                                    <p>리뷰 부분입니다.리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 더보기리뷰리뷰리뷰 부분입니다</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab2-tit flexwrap">
+                                    <p>사과나무치과</p>
+                                    <div class="star-i flexcenter">
+                                        <i class="ri-star-fill yell"></i><p class="rev-s">5.0</p> 
+                                    </div>
+                                </div>
+                                <div class="tab2-name flexwrap">
+                                    <p>고양이 집사</p>
+                                    <p class="tab2-date">등록일<span class="flexcenter">20.09.07</span></p>
+                                </div>
+                                <div class="tab2-re">
+                                    <span>[교정]</span>
+                                    <p>리뷰 부분입니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab2-tit flexwrap">
+                                    <p>사과나무치과</p>
+                                    <div class="star-i flexcenter">
+                                        <i class="ri-star-fill yell"></i><p class="rev-s">5.0</p> 
+                                    </div>
+                                </div>
+                                <div class="tab2-name flexwrap">
+                                    <p>고양이 집사</p>
+                                    <p class="tab2-date">등록일<span class="flexcenter">20.09.07</span></p>
+                                </div>
+                                <div class="tab2-re">
+                                    <span>[교정]</span>
+                                    <p>리뷰 부분입니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab2-tit flexwrap">
+                                    <p>사과나무치과</p>
+                                    <div class="star-i flexcenter">
+                                        <i class="ri-star-fill yell"></i><p class="rev-s">5.0</p> 
+                                    </div>
+                                </div>
+                                <div class="tab2-name flexwrap">
+                                    <p>고양이 집사</p>
+                                    <p class="tab2-date">등록일<span class="flexcenter">20.09.07</span></p>
+                                </div>
+                                <div class="tab2-re">
+                                    <span>[교정]</span>
+                                    <p>리뷰 부분입니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="tab2-tit flexwrap">
+                                    <p>사과나무치과</p>
+                                    <div class="star-i flexcenter">
+                                        <i class="ri-star-fill yell"></i><p class="rev-s">5.0</p> 
+                                    </div>
+                                </div>
+                                <div class="tab2-name flexwrap">
+                                    <p>고양이 집사</p>
+                                    <p class="tab2-date">등록일<span class="flexcenter">20.09.07</span></p>
+                                </div>
+                                <div class="tab2-re">
+                                    <span>[교정]</span>
+                                    <p>리뷰 부분입니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">≪</a></li>
+                        <li class="page-item"><a class="page-link" href="#">＜</a></li>
+                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">＞</a></li>
+                        <li class="page-item"><a class="page-link" href="#">≫</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="modal" id="ham-mo">
+            <div class="modal-bg"></div>
+            <div class="modalContent md ham-con">
+                <header class="modalHd">
+                    <h3>더보기</h3>
+                    <button class="modalClose"></button>
+                </header>
+                <div class="modalBody pt0 ham-body">
+                    <ul class="cont-ul">
+                        <li><a href="">방문후기</a></li>
+                        <li><a href="">자유게시판</a></li>
+                        <li><a href="">질문과 답변</a></li>
+                        <li><a href="">제품판매</a></li>
+                        <li><a href="">구인구직</a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">의사/병원 등록하기</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="foot-ul flexcenter">
+                <li><a href="">입점문의</a>ㅣ</li>
+                <li><a href="">이용약관</a>ㅣ</li>
+                <li><a href="" class="bold">개인정보방침</a>ㅣ</li>
+                <li><a href="">이용안내</a></li>
+            </ul>
+            <ul class="foot-ul foot-sns flexcenter">
+                <li><a href="" class="facebook-i"></a></li>
+                <li><a href="" class="insta-i"></a></li>
+                <li><a href="" class="kakao-i"></a></li>
+                <li><a href="" class="twitter-i"></a></li>
+                <li><a href="" class="youtube-i"></a></li>
+            </ul>
+            <ul class="foot-inf">
+                <li>상호명 : 닥터모아 ㅣ 사업자등록번호 : 000-00-00000</li>
+                <li>대표 : 대표님 ㅣ 대표번호 : 000-0000-0000</li>
+                <li>서울특별시 어시구 어디로 000 서울빌딩 0층</li>
+            </ul>
+        </footer>
+        <nav class="f-nav">
+            <ul class="flexwrap">
+                <li><a href=""><i class="ham-i"></i></a></li>
+                <li><a href=""><i class="location-i"></i></a></li>
+                <li><a href=""><i class="search-i"></i></a></li>
+                <li><a href=""><i class="home-i"></i></a></li>
+                <li><a href=""><i class="mypage-i"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="../assets/js/common.js"></script>
+</body>
+</html>
