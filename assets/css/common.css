@@ -177,8 +177,9 @@ button{
     padding:0 15px;
 }
 button.btn-grey{
-    background:#323d49;
-    color:#fff;
+    background:#fff;
+    border:1px solid #323d49;
+    color: #323d49;
 }
 button.btn-mint{
     background:#2bc8ad;
@@ -1037,7 +1038,7 @@ p.blue-txt{
     margin-bottom: 30px;
 }
 .sign-id {
-    width: calc(100% - 89px);
+    width: calc(100% - 93px);/*201027 수정*/
     margin: 5px 5px 5px 0;
 }
 .blue-btn{
@@ -1264,26 +1265,27 @@ p.blue-txt{
 .com-main-ul li:first-child{
     border-top: 1px solid #E3E3E3;
 }
-.com-main-ul li a{
+.com-main-ul li .bor-com{/*201027 수정~*/
     padding: 0 10px;
 }
-.com-main-ul li a div{
+.com-main-ul li .bor-com .bor-inf{
     display: flex;
     color: #616161;
     font-size: 12px;
 }
-.com-main-ul li a div .com-day{
+.bor-inf .com-id a{color: #616161;}
+.com-main-ul li .bor-com .bor-inf .com-day{
     display: flex;
     align-items: center;
 }
-.com-main-ul li a div .com-day::before,.com-main-ul li a div .com-day::after{
+.com-main-ul li .bor-com .bor-inf .com-day::before,.com-main-ul li .bor-com .bor-inf .com-day::after{
     content: '';
     display: block;
     width: 1px;
     height: 9px;
     background: #E3E3E3;
     margin: 0 5px;
-}
+}/*~*/
 .com-main-ul li .li-num{
     width: 50px;
     height: 50px;
@@ -2119,6 +2121,36 @@ a.blue-btn{
 .c-tit{
     display: none;
 }
+/* 의사/병원 등록 */
+.check-box{
+    margin-top: 30px;
+}
+.modal-ul2{
+    height: 300px;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+.modal-ul2::-webkit-scrollbar{ display:none; }
+.modal-ul2 li{
+    padding: 10px 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+.mo-li2-tit {
+    font-weight: bold;
+}
+.mo-li2-sc{
+    margin-bottom: 10px;
+}
+.check-box label a{
+    text-decoration: underline;
+}
+.span-t {
+    display: block;
+    margin: 5px 0 20px;
+}
 @media screen and (min-width:400px){
     .ul2-name h3{
         font-size: 20px;
@@ -2389,12 +2421,13 @@ a.blue-btn{
     .in-hd .logo a{
         font-size: 0;
     }
-    .content1 .com-main .com-main-ul li a{
+    .content1 .com-main .com-main-ul li .bor-com{/*201027 수정*/
         width: calc(100% - 50px);
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+    
     .tab-box{
         margin-top: 30px;
     }
@@ -2461,6 +2494,10 @@ a.blue-btn{
 
     .menu-box{
         margin: 70px auto 0;
+    }
+
+    .src-form.mo-form  {
+        width: 100%;
     }
 }
 @media screen and (min-width:1000px){
@@ -2581,15 +2618,13 @@ a.blue-btn{
         border-left: 1px solid #E3E3E3;
         border-right: 1px solid #E3E3E3;
     }
-    .content1 .com-main .com-main-ul li a div{
-        display: flex;
+    .content1 .com-main .com-main-ul li .bor-com .bor-inf{/*201027 수정~*/
         font-size: 14px;
-        align-items: center;
     }
-    .com-main-ul li a div .com-day::before, .com-main-ul li a div .com-day::after {
+    .com-main-ul li .bor-com .bor-inf .com-day::before, .com-main-ul li .bor-com .bor-inf .com-day::after {
         height: 15px;
         margin: 0 10px;
-    }
+    }/*~*/
 
     
     .info-nav li{
@@ -2694,4 +2729,23 @@ a.blue-btn{
         font-size: 18px;
         color: #2570b2;
     }
+}
+
+/* 201027 추가 */
+.review-btn {cursor: pointer;}
+.mo-tit .tab2-date{
+    display: flex;
+    align-items: center;
+}
+.mo-tit .tab2-date span::before{
+    content: '';
+    width: 1px;
+    height: 10px;
+    background: #616161;
+    display: block;
+    margin: 0 5px;
+}
+.rv-con{
+    height: 200px;
+    max-height: 300px;
 }

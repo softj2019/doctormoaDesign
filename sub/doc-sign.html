@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>닥터모아</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/common.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+    <div class="wrap fo-wrap">
+        <header class="m-header">
+            <div class="in-hd sub-hd">
+                <div class="logo-box">
+                    <button type="button" class="left-btn">이전</button>
+                    <h1 class="logo"><a href="../index.html">닥터모아</a></h1>
+                </div>
+                <div class="src-out">
+                    <p class="blue-txt">의사/병원 등록</p>
+                    <button type="button" class="ham-btn"></button>
+                </div>
+            </div>
+        </header>
+        <div class="tab-bg"></div>
+        <div class="right-tab">
+            <div class="tab-hd flexwrap">
+                <button type="button" class="closebox"></button>
+                <ul class="main-tab-ul flexcenter">
+                    <li><a href="">로그인</a>ㅣ</li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+            </div>
+            <ul class="tab-lo">
+                <li><a href="">마이페이지</a></li>
+                <li><a href="">진료선택</a></li>
+                <li><a href="">방문후기</a></li>
+                <li><a href="">자유게시판</a></li>
+                <li><a href="">질문과 답변</a></li>
+                <li><a href="">제품판매</a></li>
+                <li><a href="">구인구직</a></li>
+                <li><a href="">공지사항</a></li>
+                <li><a href="">의사/병원 등록하기</a></li>
+            </ul>
+        </div>
+        <div class="in-box sign-box">
+            <div class="content-box">
+                <form action="" class="sign-form" method="POST">
+                    <p>1. 기본정보</p>
+                    <input type="text" class="sign-id input-1" placeholder="병원이름"><button type="button" class="blue-btn doc-mo-btn">조회하기</button>
+                    <input type="text" class="sign-name input-1 w100 mb5" placeholder="이름">
+                    <input type="text" class="sign-name input-1 w100 mb5" placeholder="이메일주소">
+                    <input type="text" class="sign-name input-1 w100 mb5" placeholder="휴대폰 번호">
+                    <input type="password" class="sign-pw input-1 w100" placeholder="비밀번호">
+                    <input type="password" class="sign-pwc input-1 w100" placeholder="비밀번호 확인">
+                    <span class="err-red">* 비밀번호가 틀렸습니다.</span>
+
+                    <div class="check-box">
+                        <input type="checkbox" id="ch2"><label for="ch2" class="check-b">전체동의</label>
+                        <input type="checkbox" id="ch3"><label for="ch3" class="check-b"><a href="">서비스 이용약관</a> 및 <a href="">개인정보취급방침</a> (필수)</label>
+                        <input type="checkbox" id="ch4"><label for="ch4" class="check-b"><a href="">위치기반서비스 이용약관</a>(필수)</label>
+                    </div>
+
+                    <button type="button" class="blue-b-btn mt80">메일인증</button>
+                </form>
+            </div>
+        </div>
+        <div class="modal" id="doc-mo">
+            <div class="modal-bg"></div>
+            <div class="modalContent md">
+                <header class="modalHd">
+                    <h3>병원명 입력</h3>
+                    <button class="modalClose"></button>
+                </header>
+                <div class="modalBody">
+                    <p class="mb10">병원을 검색해 주세요.</p>
+                    <div class="src-form mo-form">
+                        <form action="" class="flexwrap">
+                            <input type="text" class="src-inp">
+                            <button type="button" class="src-btn"></button>
+                        </form>
+                    </div>
+                    <ul class="modal-ul2">
+                        <li>
+                            <a href="">
+                                <p class="mo-li2-tit">사과나무치과</p>
+                                <p class="mo-li2-sc">강남역 5번출구앞</p>
+                                <p>서울 서초구 사임당로 175 갤럭시타워 1층 02-585</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="mo-li2-tit">사과나무치과</p>
+                                <p class="mo-li2-sc">강남역 5번출구앞</p>
+                                <p>서울 서초구 사임당로 175 갤럭시타워 1층 02-585</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="mo-li2-tit">사과나무치과</p>
+                                <p class="mo-li2-sc">강남역 5번출구앞</p>
+                                <p>서울 서초구 사임당로 175 갤럭시타워 1층 02-585</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="mo-li2-tit">사과나무치과</p>
+                                <p class="mo-li2-sc">강남역 5번출구앞</p>
+                                <p>서울 서초구 사임당로 175 갤럭시타워 1층 02-585</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mo-btn-box">
+                        <button type="button" class="bor-g-btn mr10">취소</button>
+                        <button type="button" class="bor-b-btn">등록</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="ham-mo">
+            <div class="modal-bg"></div>
+            <div class="modalContent md ham-con">
+                <header class="modalHd">
+                    <h3>더보기</h3>
+                    <button class="modalClose"></button>
+                </header>
+                <div class="modalBody pt0 ham-body">
+                    <ul class="cont-ul">
+                        <li><a href="">방문후기</a></li>
+                        <li><a href="">자유게시판</a></li>
+                        <li><a href="">질문과 답변</a></li>
+                        <li><a href="">제품판매</a></li>
+                        <li><a href="">구인구직</a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">의사/병원 등록하기</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/common.js"></script>
+</body>
+</html>
